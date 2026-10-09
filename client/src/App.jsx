@@ -20,7 +20,7 @@ import {
 import { useCart } from "./cart";
 import { useEffect, useState } from "react";
 
-const API = "/api";
+const API = (import.meta.env.VITE_API_URL || "") + "/api";
 
 // HEADER
 function Header({ user, setUser }) {
